@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function (row, column) {
+  if (row.hasOwnProperty(column)) return row[column];
 
   if (column.indexOf('.') === -1) return row[column];
 
